@@ -40,7 +40,7 @@ For more check the code.
 
 ## Author
 
-* lukasowy
+* Raqibul Alam
 
 ## License
 

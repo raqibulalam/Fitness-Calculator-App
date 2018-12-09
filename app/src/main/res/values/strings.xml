@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Fitness Calculators</string>
+
+    <string-array name="itemsSpActivity">
+        <item>Sedentary</item>
+        <item>Light Activity</item>
+        <item>Moderately Active</item>
+        <item>Very Active</item>
+        <item>Extremely Active</item>
+    </string-array>
+
+    <string-array name="itemsSpClimate">
+        <item>Tropical</item>
+        <item>Temperate</item>
+        <item>Cold</item>
+    </string-array>
+
+    <string-array name="itemsSpGoalProtein">
+        <item>Fat Loss</item>
+        <item>Maintenance</item>
+        <item>Muscle Gains</item>
+    </string-array>
+    <string name="longTextBMI">BMI is used as a screening tool to indicate whether a person is
+        underweight, overweight, obese or a healthy weight for their height. \n\n If a person\'s
+        BMI is out of the healthy BMI range, their health risks may increase significantly.\n\n
+        BMI values are age-independent and the same for both sexes. However, BMI may not correspond
+        to the same degree of fatness in different populations due to different body proportions.</string>
+
+    <string name="longTextWater">To function properly, all the cells and organs of the body need water.
+        It is also used to lubricate the joints, protect the spinal cord and other sensitive tissues,
+        regulate body temperature, and assist the passage of food through the intestines.\n\n
+        Although some of the water required by the body is obtained through foods with a high water
+        content - soups, tomatoes, oranges - the majority is gained through drinking water and other beverages.\n\n
+        During every day functioning, water is lost by the body, and this needs to be replaced.
+        It is noticeable that we lose water through activities such as sweating and urination, but water is even lost when breathing.</string>
+
+    <string name="longTextHeart">If you\'ve been to the gym recently, you might have seen fellow
+        exercisers taking their pulse. If so, you may have wondered how important heart-rate
+        monitoring is when you exercise, and whether pausing long enough to check your heart
+        rate is worth it. It is. Keeping track of your heart rate can help ensure you get the
+        best possible workout.\n\n Your Target Heart Rate\n\n Your target heart rate is the number
+        of beats per minute you should aim for during your workout. It\'s a percentage of your
+        maximum heart rate, the number of beats per minute you should never exceed. The Centers
+        for Disease Control and Prevention recommend exercising at 70 to 85 percent of your maximum
+        heart rate if you\'re in good physical shape but sticking to 40 to 50 percent if you are not
+        in shape or are new to exercise. You can find your target heart rate by using calculators
+        like that provided by the American Cancer Society.</string>
+
+    <string name="longTextMetabolic">Everybody requires a minimum number of calories to live.
+        This minimum number is called the basal metabolic rate \(BMR\). Your BMR is the number of
+        calories your organs need to function while you perform no activity whatsoever. You can
+        think of it as the amount of energy you\'d burn if you stayed in bed all day.. \n\n Once
+        you know your BMR, you can use it to calculate the calories you actually burn in a day.
+        From there, you can determine how many calories you need to eat to gain muscle, lose fat,
+        or maintain your weight.</string>
+
+    <string name="longTextProtein">It\'s easy to understand the excitement. Protein is an important
+        component of every cell in the body. Hair and nails are mostly made of protein. Your body
+        uses protein to build and repair tissues. You also use protein to make enzymes, hormones,
+        and other body chemicals. Protein is an important building block of bones, muscles,
+        cartilage, skin, and blood.\n\n
+        Along with fat and carbohydrates, protein is a \"macronutrient,\" meaning that the body needs
+        relatively large amounts of it. Vitamins and minerals, which are needed in only small
+        quantities, are called \"micronutrients.\" But unlike fat and carbohydrates, the body does
+        not store protein, and therefore has no reservoir to draw on when it needs a new supply.</string>
+
+    <string name="longTextCreatine">Creatine has been recognized as a product that delivers on its
+        promise of improved strength. In this article we will review creatine benefits, who will
+        benefit, types to buy and much more. Read on to get the facts!\n\n Those involved in the
+        bodybuilding/strength training world - trainers and athletes alike - would know the importance
+        of proper supplementation. One of the more successful supplements to hit the shelves would be creatine.\n\n
+        Creatine enhances the body\'s capacity to perform high intensity work (and assists greater
+        muscle size and performance gains as a result).</string>
+    <string name="what_is_bmi">What is BMI?</string>
+    <string name="what_is_bmr">What is BMR?</string>
+    <string name="sex">Sex:</string>
+    <string name="kg">kg</string>
+    <string name="dots3">...</string>
+</resources>

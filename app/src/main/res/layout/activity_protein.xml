@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:weightSum="10"
+    app:umanoPanelHeight="60dp"
+    app:umanoShadowHeight="20dp"
+    android:gravity="bottom"
+    tools:context="org.lukasowy.fitnesscalculators.ProteinActivity">
+
+    <RelativeLayout
+        android:id="@+id/allScreenProtein"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:layout_below="@+id/btnCalculate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="51dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/inputAge">
+
+            <RadioButton
+                android:id="@+id/radioBtnMale"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup"
+                android:layout_toStartOf="@+id/radioBtnFemale"
+                android:buttonTint="@color/colorWhite"
+                android:text="Male"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="259dp"
+                tools:layout_editor_absoluteY="88dp" />
+
+            <RadioButton
+                android:id="@+id/radioBtnFemale"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/inputWeight"
+                android:layout_below="@+id/radioGroup"
+                android:layout_marginStart="5dp"
+                android:buttonTint="@color/colorWhite"
+                android:text="Female"
+                android:textColor="@android:color/white"
+                android:textColorLink="@color/colorWhite"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="138dp"
+                tools:layout_editor_absoluteY="88dp"
+                android:layout_weight="0.42" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/inputAge"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:backgroundTint="@color/colorWhite"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="@color/colorWhite"
+            android:textColorHighlight="@color/colorWhite"
+            android:textColorLink="@color/colorWhite"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/radioGroup"
+            android:layout_alignStart="@+id/inputWeight" />
+
+        <EditText
+            android:id="@+id/inputWeight"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:backgroundTint="@color/colorWhite"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:shadowColor="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:textColorHighlight="@color/colorWhite"
+            android:textColorLink="@color/colorWhite"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/inputAge"
+            android:layout_alignStart="@+id/btnCalculate" />
+
+
+        <Button
+            android:id="@+id/btnCalculate"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="155dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_corners"
+            android:elevation="4dp"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:text="Result"
+            android:layout_marginTop="34dp"
+            android:layout_below="@+id/spinnerGoal"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/titleViewBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Protein Intake"
+            android:textColor="@android:color/white"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/inputAge"
+            android:layout_alignBottom="@+id/inputAge"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:text="Age:"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/inputWeight"
+            android:layout_alignBottom="@+id/inputWeight"
+            android:layout_alignStart="@+id/textView6"
+            android:text="Weight:"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_alignBaseline="@+id/inputAge"
+            android:layout_alignBottom="@+id/inputAge"
+            android:layout_toEndOf="@+id/btnCalculate" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_alignBaseline="@+id/inputWeight"
+            android:layout_alignBottom="@+id/inputWeight"
+            android:layout_toEndOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/radioGroup"
+            android:layout_alignStart="@+id/textView6"
+            android:text="Sex:"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/spinnerGoal"
+            android:background="@android:color/white"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/btnCalculate"
+            android:layout_alignEnd="@+id/radioGroup" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goal:"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_alignBottom="@+id/spinnerGoal"
+            android:layout_alignStart="@+id/textView7" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/slidingUp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorWhite"
+            android:text="Why Is Eating Protein Important?"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:text="@string/longTextProtein"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
